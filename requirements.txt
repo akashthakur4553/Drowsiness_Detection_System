@@ -1,3 +1,11 @@
-opencv-python
 streamlit
+opencv-python-headless
 streamlit_webrtc
+Pillow
+numpy
+aioice
+logging
+twilio
+scipy
+imutils
+dlib
