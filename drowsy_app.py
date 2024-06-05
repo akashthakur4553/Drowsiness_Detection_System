@@ -17,8 +17,8 @@ from twilio.base.exceptions import TwilioRestException
 from twilio.rest import Client
 
 # Initialize the mixer for alert sound
-mixer.init()
-mixer.music.load("alert2.wav")
+# mixer.init()
+# mixer.music.load("alert2.wav")
 
 
 # Function to calculate the eye aspect ratio
@@ -107,7 +107,7 @@ class DrowsinessTransformer(VideoTransformerBase):
                         (0, 0, 255),
                         2,
                     )
-                    mixer.music.play()
+                    # mixer.music.play()
             else:
                 self.flag = 0
 
