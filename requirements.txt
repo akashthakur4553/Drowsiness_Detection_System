@@ -10,3 +10,4 @@ twilio
 scipy
 imutils
 dlib-bin
+pygame
