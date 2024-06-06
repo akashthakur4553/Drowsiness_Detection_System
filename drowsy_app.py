@@ -20,8 +20,8 @@ audio_file = open("alarm.mp3", "rb")
 audio_bytes = audio_file.read()
 
 # Initialize the mixer for alert sound
-mixer.init()
-mixer.music.load("alarm.mp3")
+# mixer.init()
+# mixer.music.load("alarm.mp3")
 
 
 # Function to calculate the eye aspect ratio
@@ -110,7 +110,7 @@ class DrowsinessTransformer(VideoTransformerBase):
                         (0, 0, 255),
                         2,
                     )
-                    mixer.music.play()
+                    # mixer.music.play()
                     st.audio(audio_bytes, format="audio/mp3", autoplay=True, start_time=0, end_time=5)
             else:
                 self.flag = 0
