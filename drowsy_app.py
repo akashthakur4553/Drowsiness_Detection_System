@@ -16,6 +16,9 @@ from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 from twilio.base.exceptions import TwilioRestException
 from twilio.rest import Client
 
+audio_file = open("alarm.mp3", "rb")
+audio_bytes = audio_file.read()
+
 # Initialize the mixer for alert sound
 # mixer.init()
 # mixer.music.load("alert2.wav")
@@ -108,6 +111,7 @@ class DrowsinessTransformer(VideoTransformerBase):
                         2,
                     )
                     # mixer.music.play()
+                    st.audio(audio_bytes, format="audio/mp3", autoplay=True, start_time=0, end_time=5)
             else:
                 self.flag = 0
 
