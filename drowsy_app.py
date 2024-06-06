@@ -46,7 +46,7 @@ flag = 0
 def get_ice_servers():
     try:
         account_sid = "AC33632aa93a8aef5cdd18973197a2be57"
-        auth_token = "2ffa7a9f828ec2b38eef19fc888f800f"
+        auth_token = "204b198c1a053a12fb4fee7f2158d4e6"
     except KeyError:
         logger.warning(
             "Twilio credentials are not set. Fallback to a free STUN server from Google."
