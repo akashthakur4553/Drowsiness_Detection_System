@@ -126,7 +126,7 @@ ice_servers = get_ice_servers()
 webrtc_streamer(
     key="drowsiness",
     video_processor_factory=DrowsinessTransformer,
-    media_stream_constraints={"video": True, "audio": False},
+    media_stream_constraints={"video": True, "audio": True},
     rtc_configuration={"iceServers": ice_servers},
 )
 
